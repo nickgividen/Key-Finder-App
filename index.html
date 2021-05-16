@@ -11,98 +11,49 @@
 <body>
     <h1>Key Finder</h1>
     <div class="container">
-        <button onclick="playAudio()" class="btn">C</button>
-        <audio id="C" src="audio/Key-of-C.mp3"></audio>
         
-        <button onclick="playAudioDb()" class="btn">C#/Db</button>
-        <audio id="Db" src="audio/Key-of-Db.mp3"></audio>
+        <button onclick="playAudio('c')" class="btn" >C</button>
+        <audio id="c" src="audio/Key-of-C.mp3"></audio>
         
-        <button onclick="playAudioD()" class="btn">D</button>
-        <audio id="D" src="audio/Key-of-D.mp3"></audio>
+        <button onclick="playAudio('db')" class="btn">C#/Db</button>
+        <audio id="db" src="audio/Key-of-Db.mp3"></audio>
         
-        <button onclick="playAudioEb()" class="btn">Eb</button>
-        <audio id="Eb" src="audio/Key-of-Eb.mp3"></audio>
+        <button onclick="playAudio('d')" class="btn">D</button>
+        <audio id="d" src="audio/Key-of-D.mp3"></audio>
+        
+        <button onclick="playAudio('eb')" class="btn">Eb</button>
+        <audio id="eb" src="audio/Key-of-Eb.mp3"></audio>
     
-        <button onclick="playAudioE()" class="btn">E</button>
-        <audio id="E" src="audio/Key-of-E.mp3"></audio>
+        <button onclick="playAudio('e')" class="btn">E</button>
+        <audio id="e" src="audio/Key-of-E.mp3"></audio>
         
-        <button onclick="playAudioF()" class="btn">F</button>
-        <audio id="F" src="audio/Key-of-F.mp3"></audio>
+        <button onclick="playAudio('f')" class="btn">F</button>
+        <audio id="f" src="audio/Key-of-F.mp3"></audio>
         
-        <button onclick="playAudioGb()" class="btn">F#/Gb</button>
-        <audio id="Gb" src="audio/Key-of-Gb.mp3"></audio>
+        <button onclick="playAudio('gb')" class="btn">F#/Gb</button>
+        <audio id="gb" src="audio/Key-of-Gb.mp3"></audio>
         
-        <button onclick="playAudioG()" class="btn">G</button>
-        <audio id="G" src="audio/Key-of-G.mp3"></audio>
+        <button onclick="playAudio('g')" class="btn">G</button>
+        <audio id="g" src="audio/Key-of-G.mp3"></audio>
         
-        <button onclick="playAudioAb()" class="btn">Ab</button>
-        <audio id="Ab" src="audio/Key-of-Ab.mp3"></audio>
+        <button onclick="playAudio('ab')" class="btn">Ab</button>
+        <audio id="ab" src="audio/Key-of-Ab.mp3"></audio>
         
-        <button onclick="playAudioA()" class="btn">A</button>
-        <audio id="A" src="audio/Key-of-A.mp3"></audio>
+        <button onclick="playAudio('a')" class="btn">A</button>
+        <audio id="a" src="audio/Key-of-A.mp3"></audio>
         
-        <button onclick="playAudioBb()" class="btn">Bb</button>
-        <audio id="Bb" src="audio/Key-of-Bb.mp3"></audio>
+        <button onclick="playAudio('bb')" class="btn">Bb</button>
+        <audio id="bb" src="audio/Key-of-Bb.mp3"></audio>
         
-        <button onclick="playAudioB()" class="btn">B</button>
-        <audio id="B" src="audio/Key-of-B.mp3"></audio>
+        <button onclick="playAudio('b')" class="btn">B</button>
+        <audio id="b" src="audio/Key-of-B.mp3"></audio>
     </div>
     
 </body>
 <script>
     function playAudio(e) {
-        const audio = e.target.id;
-        console.log(audio);
+        const audio = document.getElementById(e);
+        audio.play();
     }
-    
-    
-    // let keyC = document.getElementById('C');
-    // function playAudioC() {
-    //     keyC.play();
-    // }
-    // let keyF = document.getElementById('F');
-    // function playAudioF() {
-    //     keyF.play();
-    // }
-    // let keyBb = document.getElementById('Bb');
-    // function playAudioBb() {
-    //     keyBb.play();
-    // }
-    // let keyEb = document.getElementById('Eb');
-    // function playAudioEb() {
-    //     keyEb.play();
-    // }
-    // let keyAb = document.getElementById('Ab');
-    // function playAudioAb() {
-    //     keyAb.play();
-    // }
-    // let keyDb = document.getElementById('Db');
-    // function playAudioDb() {
-    //     keyDb.play();
-    // }
-    // let keyGb = document.getElementById('Gb');
-    // function playAudioGb() {
-    //     keyGb.play();
-    // }
-    // let keyB = document.getElementById('B');
-    // function playAudioB() {
-    //     keyB.play();
-    // }
-    // let keyE = document.getElementById('E');
-    // function playAudioE() {
-    //     keyE.play();
-    // }
-    // let keyA = document.getElementById('A');
-    // function playAudioA() {
-    //     keyA.play();
-    // }
-    // let keyD = document.getElementById('D');
-    // function playAudioD() {
-    //     keyD.play();
-    // }
-    // let keyG = document.getElementById('G');
-    // function playAudioG() {
-    //     keyG.play();
-    // }
 </script>
 </html>
