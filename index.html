@@ -11,7 +11,7 @@
 <body>
     <h1>Key Finder</h1>
     <div class="container">
-        <button onclick="playAudioC()" class="btn">C</button>
+        <button onclick="playAudio()" class="btn">C</button>
         <audio id="C" src="audio/Key-of-C.mp3"></audio>
         
         <button onclick="playAudioDb()" class="btn">C#/Db</button>
@@ -50,53 +50,59 @@
     
 </body>
 <script>
-    let keyC = document.getElementById('C');
-    function playAudioC() {
-        keyC.play();
+    function playAudio(e) {
+        const audio = e.target.id;
+        console.log(audio);
     }
-    let keyF = document.getElementById('F');
-    function playAudioF() {
-        keyF.play();
-    }
-    let keyBb = document.getElementById('Bb');
-    function playAudioBb() {
-        keyBb.play();
-    }
-    let keyEb = document.getElementById('Eb');
-    function playAudioEb() {
-        keyEb.play();
-    }
-    let keyAb = document.getElementById('Ab');
-    function playAudioAb() {
-        keyAb.play();
-    }
-    let keyDb = document.getElementById('Db');
-    function playAudioDb() {
-        keyDb.play();
-    }
-    let keyGb = document.getElementById('Gb');
-    function playAudioGb() {
-        keyGb.play();
-    }
-    let keyB = document.getElementById('B');
-    function playAudioB() {
-        keyB.play();
-    }
-    let keyE = document.getElementById('E');
-    function playAudioE() {
-        keyE.play();
-    }
-    let keyA = document.getElementById('A');
-    function playAudioA() {
-        keyA.play();
-    }
-    let keyD = document.getElementById('D');
-    function playAudioD() {
-        keyD.play();
-    }
-    let keyG = document.getElementById('G');
-    function playAudioG() {
-        keyG.play();
-    }
+    
+    
+    // let keyC = document.getElementById('C');
+    // function playAudioC() {
+    //     keyC.play();
+    // }
+    // let keyF = document.getElementById('F');
+    // function playAudioF() {
+    //     keyF.play();
+    // }
+    // let keyBb = document.getElementById('Bb');
+    // function playAudioBb() {
+    //     keyBb.play();
+    // }
+    // let keyEb = document.getElementById('Eb');
+    // function playAudioEb() {
+    //     keyEb.play();
+    // }
+    // let keyAb = document.getElementById('Ab');
+    // function playAudioAb() {
+    //     keyAb.play();
+    // }
+    // let keyDb = document.getElementById('Db');
+    // function playAudioDb() {
+    //     keyDb.play();
+    // }
+    // let keyGb = document.getElementById('Gb');
+    // function playAudioGb() {
+    //     keyGb.play();
+    // }
+    // let keyB = document.getElementById('B');
+    // function playAudioB() {
+    //     keyB.play();
+    // }
+    // let keyE = document.getElementById('E');
+    // function playAudioE() {
+    //     keyE.play();
+    // }
+    // let keyA = document.getElementById('A');
+    // function playAudioA() {
+    //     keyA.play();
+    // }
+    // let keyD = document.getElementById('D');
+    // function playAudioD() {
+    //     keyD.play();
+    // }
+    // let keyG = document.getElementById('G');
+    // function playAudioG() {
+    //     keyG.play();
+    // }
 </script>
 </html>

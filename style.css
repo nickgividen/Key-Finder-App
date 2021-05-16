@@ -41,6 +41,9 @@ h1 {
 }
 
 .btn:hover {
-    border-color: #7f5af0;
+    background-color: #fffffe;
+    color: #16161a;
+    font-weight: 900;
     transition: all 150ms;
+    cursor: pointer;
 }
